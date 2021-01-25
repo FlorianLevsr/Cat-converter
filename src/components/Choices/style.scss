@@ -1,0 +1,44 @@
+@import '../../styles/vars';
+
+.choices {
+
+    background-color: $color-light;
+    max-height: 250px;
+    overflow-y: auto;
+
+    &-title {
+        padding: $gutter;
+        margin-top: $gutter;
+        font-weight: bold;
+    }
+
+    &::-webkit-scrollbar {
+        width: $gutter/2;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: $color-light;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color;
+        outline: $color-light;
+    }
+
+
+}
+
+.choice {
+
+    padding: $gutter;
+    border-top: 1px solid $color-alt;
+    font-weight: 500;
+    transition: background-color 1s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-alt;
+        transition-duration: $transition-fast;
+    }
+
+}

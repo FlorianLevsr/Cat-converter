@@ -1,0 +1,27 @@
+@import '../../styles/vars';
+
+.toggler {
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    margin: -25px auto;
+    display: block;
+    border-radius: 50%;
+    border: 4px solid $color;
+    background-color: $color-light;
+    color: $color;
+    font-weight: bold;
+    font-size: 2em;
+    transition: transform $transition-fast, background-color $transition-fast;
+    outline: none;
+    
+
+    &:hover {
+        background-color: $color-alt;
+    }
+
+    &--open {
+        transform: rotate(-90deg);
+    }
+}
