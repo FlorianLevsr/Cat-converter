@@ -35,8 +35,6 @@ class App extends React.Component {
 
   setSelectedObject = (selectedObject) => {
 
-    const { baseAmount, object } = this.state;
-
     this.setState({ object: selectedObject, baseAmount: 1 });
 
   };
